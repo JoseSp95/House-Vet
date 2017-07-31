@@ -1,11 +1,12 @@
 package veterinariaprolog;
 
 import view.frmLogin;
+import view.frmLogin2;
 
 public class VeterinariaProlog {
 
     public static void main(String[] args) {
-        new frmLogin().setVisible(true);
+        new frmLogin2().setVisible(true);
     }
     
 }
