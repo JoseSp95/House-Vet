@@ -16,9 +16,11 @@ public class frmLogin extends javax.swing.JFrame {
     private void initComponents() {
 
         Pane = new javax.swing.JPanel();
+        btnInit = new javax.swing.JButton();
         btnMinimize = new javax.swing.JButton();
+        lblTitle = new javax.swing.JLabel();
         btnExit = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        lblImage = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -38,9 +40,17 @@ public class frmLogin extends javax.swing.JFrame {
         });
         Pane.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        btnInit.setBackground(new java.awt.Color(38, 50, 56));
+        btnInit.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnInit.setForeground(new java.awt.Color(255, 255, 255));
+        btnInit.setText("Iniciar");
+        btnInit.setFocusPainted(false);
+        btnInit.setFocusable(false);
+        Pane.add(btnInit, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 380, 170, 50));
+
         btnMinimize.setBackground(new java.awt.Color(38, 50, 56));
         btnMinimize.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        btnMinimize.setForeground(new java.awt.Color(255, 255, 255));
+        btnMinimize.setForeground(new java.awt.Color(38, 50, 56));
         btnMinimize.setText("_");
         btnMinimize.setBorderPainted(false);
         btnMinimize.setFocusPainted(false);
@@ -51,11 +61,17 @@ public class frmLogin extends javax.swing.JFrame {
                 btnMinimizeActionPerformed(evt);
             }
         });
-        Pane.add(btnMinimize, new org.netbeans.lib.awtextra.AbsoluteConstraints(955, 6, -1, -1));
+        Pane.add(btnMinimize, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 0, -1, -1));
+
+        lblTitle.setFont(new java.awt.Font("Arial", 0, 48)); // NOI18N
+        lblTitle.setForeground(new java.awt.Color(77, 76, 76));
+        lblTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblTitle.setText("House Vet");
+        Pane.add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 100, 270, 60));
 
         btnExit.setBackground(new java.awt.Color(38, 50, 56));
         btnExit.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        btnExit.setForeground(new java.awt.Color(255, 255, 255));
+        btnExit.setForeground(new java.awt.Color(38, 50, 56));
         btnExit.setText("X");
         btnExit.setBorderPainted(false);
         btnExit.setFocusPainted(false);
@@ -66,12 +82,13 @@ public class frmLogin extends javax.swing.JFrame {
                 btnExitActionPerformed(evt);
             }
         });
-        Pane.add(btnExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(999, 11, -1, -1));
+        Pane.add(btnExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 10, -1, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/vetLabel.jpg"))); // NOI18N
-        Pane.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 61, 1010, 430));
+        lblImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/dog.jpg"))); // NOI18N
+        lblImage.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(38, 50, 56), 1, true));
+        Pane.add(lblImage, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1060, 490));
 
-        getContentPane().add(Pane, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1060, 610));
+        getContentPane().add(Pane, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1060, 490));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -96,7 +113,9 @@ public class frmLogin extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Pane;
     private javax.swing.JButton btnExit;
+    private javax.swing.JButton btnInit;
     private javax.swing.JButton btnMinimize;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel lblImage;
+    private javax.swing.JLabel lblTitle;
     // End of variables declaration//GEN-END:variables
 }
