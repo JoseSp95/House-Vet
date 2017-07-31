@@ -46,6 +46,11 @@ public class frmLogin extends javax.swing.JFrame {
         btnInit.setText("Iniciar");
         btnInit.setFocusPainted(false);
         btnInit.setFocusable(false);
+        btnInit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnInitActionPerformed(evt);
+            }
+        });
         Pane.add(btnInit, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 380, 170, 50));
 
         btnMinimize.setBackground(new java.awt.Color(38, 50, 56));
@@ -109,6 +114,11 @@ public class frmLogin extends javax.swing.JFrame {
     private void PaneMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PaneMouseDragged
         this.setLocation(this.getLocation().x + evt.getX() - this.x, this.getLocation().y + evt.getY() - this.y);
     }//GEN-LAST:event_PaneMouseDragged
+
+    private void btnInitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInitActionPerformed
+        new frmConsult().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnInitActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Pane;
