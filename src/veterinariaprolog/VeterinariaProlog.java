@@ -1,5 +1,6 @@
 package veterinariaprolog;
 
+import view.DialogMessage;
 import view.frmAscaris;
 import view.frmDiabetes;
 import view.frmLeucemia;
@@ -13,8 +14,8 @@ import view.frmResfriado;
 public class VeterinariaProlog {
 
     public static void main(String[] args) {
-        //new frmLogin().setVisible(true);
-        new frmLeucemia().setVisible(true);
+        new frmLogin().setVisible(true);
+        //new frmLeucemia().setVisible(true);
     }
     
 }

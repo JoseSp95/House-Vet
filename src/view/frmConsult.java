@@ -556,10 +556,16 @@ public class frmConsult extends javax.swing.JFrame {
         }
         
         if(counter < 6){
-            JOptionPane.showMessageDialog(null,"Sintomas insuficientes");
+            //JOptionPane.showMessageDialog(null,"Sintomas insuficientes");
+            DialogMessage dialogMessage = new DialogMessage(this, rootPaneCheckingEnabled);
+            dialogMessage.setType(2);
+            dialogMessage.setVisible(true);
         }
         else if( counter > 6){
-            JOptionPane.showMessageDialog(null,"Seleccione solo 6 sintomas");
+            //JOptionPane.showMessageDialog(null,"Seleccione solo 6 sintomas");
+            DialogMessage dialogMessage = new DialogMessage(this, rootPaneCheckingEnabled);
+            dialogMessage.setType(3);
+            dialogMessage.setVisible(true);
         }
         else{
             Consult consult = new Consult(list);
@@ -568,8 +574,10 @@ public class frmConsult extends javax.swing.JFrame {
             
             switch (result) {
                 case "no_determinado":
-                    result = "No se pudo detectar la enfermedad";
-                    JOptionPane.showMessageDialog(null,result);
+                    DialogMessage dialogMessage = new DialogMessage(this, rootPaneCheckingEnabled);
+                    dialogMessage.setType(1);
+                    dialogMessage.setVisible(true);
+                    //JOptionPane.showMessageDialog(null,result);
                     break;
                 case "rabia":
                     new frmRabia().setVisible(true);
