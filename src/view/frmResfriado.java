@@ -119,7 +119,7 @@ public class frmResfriado extends javax.swing.JFrame {
         btnLogin.setBackground(new java.awt.Color(38, 60, 56));
         btnLogin.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btnLogin.setForeground(new java.awt.Color(255, 255, 255));
-        btnLogin.setText("Menu Principal");
+        btnLogin.setText("MENU");
         btnLogin.setBorderPainted(false);
         btnLogin.setFocusPainted(false);
         btnLogin.setFocusable(false);
@@ -129,12 +129,12 @@ public class frmResfriado extends javax.swing.JFrame {
             }
         });
         Pane.add(btnLogin);
-        btnLogin.setBounds(820, 440, 150, 40);
+        btnLogin.setBounds(800, 440, 190, 40);
 
         btnConsult.setBackground(new java.awt.Color(38, 60, 56));
         btnConsult.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btnConsult.setForeground(new java.awt.Color(255, 255, 255));
-        btnConsult.setText("Nueva Consulta");
+        btnConsult.setText("NUEVO DIAGNOSTICO");
         btnConsult.setBorderPainted(false);
         btnConsult.setFocusPainted(false);
         btnConsult.setFocusable(false);
@@ -144,7 +144,7 @@ public class frmResfriado extends javax.swing.JFrame {
             }
         });
         Pane.add(btnConsult);
-        btnConsult.setBounds(560, 440, 150, 40);
+        btnConsult.setBounds(560, 440, 190, 40);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel5.setText("Definicion :");

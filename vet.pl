@@ -69,7 +69,7 @@ sintoma(leucemia, diarrea). % --
 sintoma(leucemia, palidez_en_la_ancia). % --
 sintoma(leucemia, dificultad_para_respirar). % --
 sintoma(leucemia, falta_de_coordinacion).% --
-sintoma(leucemia, sangrado_de_repente).% --
+sintoma(leucemia, sangrado_de_repente).% --	
 
 %----------------------------------------------------------------
 %CONSULTA A MEMORIA ACTIVA

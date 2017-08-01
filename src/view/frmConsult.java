@@ -272,7 +272,7 @@ public class frmConsult extends javax.swing.JFrame {
 
         btnConsult.setBackground(new java.awt.Color(38, 50, 56));
         btnConsult.setForeground(new java.awt.Color(255, 255, 255));
-        btnConsult.setText("CONSULTAR");
+        btnConsult.setText("DIAGNOSTICAR");
         btnConsult.setFocusPainted(false);
         btnConsult.setFocusable(false);
         btnConsult.addActionListener(new java.awt.event.ActionListener() {
@@ -559,7 +559,7 @@ public class frmConsult extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null,"Sintomas insuficientes");
         }
         else if( counter > 6){
-            JOptionPane.showMessageDialog(null,"Eliga los sintomas principales");
+            JOptionPane.showMessageDialog(null,"Seleccione solo 6 sintomas");
         }
         else{
             Consult consult = new Consult(list);
@@ -585,6 +585,18 @@ public class frmConsult extends javax.swing.JFrame {
                     break;
                 case "resfriado":
                     new frmResfriado().setVisible(true);
+                    this.dispose();
+                    break;
+                case "diabetes":
+                    new frmDiabetes().setVisible(true);
+                    this.dispose();
+                    break;
+                case "ascaris":
+                    new frmAscaris().setVisible(true);
+                    this.dispose();
+                    break;
+                case "leucemia":
+                    new frmLeucemia().setVisible(true);
                     this.dispose();
                     break;
                 default:

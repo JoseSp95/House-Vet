@@ -2,11 +2,11 @@ package view;
 
 import javax.swing.JFrame;
 
-public class frmAscaris extends javax.swing.JFrame {
+public class frmLeucemia extends javax.swing.JFrame {
 
     private int x, y;
     
-    public frmAscaris() {
+    public frmLeucemia() {
         initComponents();
         setLocationRelativeTo(null);
     }
@@ -28,6 +28,7 @@ public class frmAscaris extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -47,7 +48,7 @@ public class frmAscaris extends javax.swing.JFrame {
         });
         Pane.setLayout(null);
 
-        lblImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/ascaris.jpg"))); // NOI18N
+        lblImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/leucemia.jpg"))); // NOI18N
         Pane.add(lblImage);
         lblImage.setBounds(1, 1, 450, 513);
 
@@ -89,9 +90,9 @@ public class frmAscaris extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("ASCARIS");
+        jLabel1.setText("LEUCEMIA");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(210, 10, 200, 46);
+        jLabel1.setBounds(160, 10, 298, 46);
 
         Pane.add(jPanel1);
         jPanel1.setBounds(450, 0, 611, 69);
@@ -102,9 +103,9 @@ public class frmAscaris extends javax.swing.JFrame {
         jLabel2.setBounds(510, 240, 95, 33);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel4.setText("retraso en el crecimiento de los cachorros y en algunos casos la muerte.");
+        jLabel4.setText("De no ser diagnosticada a tiempo puede ser mortal para nuestro perro.");
         Pane.add(jLabel4);
-        jLabel4.setBounds(586, 192, 400, 29);
+        jLabel4.setBounds(586, 192, 390, 29);
 
         btnLogin.setBackground(new java.awt.Color(38, 60, 56));
         btnLogin.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -142,17 +143,22 @@ public class frmAscaris extends javax.swing.JFrame {
         jLabel5.setBounds(509, 109, 95, 33);
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel6.setText("Son parasitos internos que se localizan en el intestino delgado provocando");
+        jLabel6.setText("Es un tipo de cáncer que afecta al torrente sanguíneo del perro, ");
         Pane.add(jLabel6);
-        jLabel6.setBounds(586, 148, 405, 29);
+        jLabel6.setBounds(586, 148, 358, 29);
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel7.setText("Darle antiparasitarios como pamoato, pyrantal  y fenbendazol .");
+        jLabel7.setText("Quimiotrapia, administrándole al perro anticancerígenos.");
         Pane.add(jLabel7);
-        jLabel7.setBounds(586, 279, 410, 29);
+        jLabel7.setBounds(586, 270, 410, 29);
+
+        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel8.setText("Antibioticos");
+        Pane.add(jLabel8);
+        jLabel8.setBounds(586, 292, 410, 29);
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel10.setText("distintos transtornos de su salud, en particular diarrea, desnutrición, ");
+        jLabel10.setText("relacionado principalmente con el número de glóbulos blancos.");
         Pane.add(jLabel10);
         jLabel10.setBounds(586, 170, 378, 29);
 
@@ -210,6 +216,7 @@ public class frmAscaris extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblImage;
     // End of variables declaration//GEN-END:variables
