@@ -2,7 +2,6 @@
     se ingresan 6 sintomas por java obligatorio 
 */
 
-
 %MEMORIA ACTIVA
 :-dynamic var/2.
 
@@ -63,6 +62,15 @@ sintoma(diabetes, orina_con_frecuencia). %--
 sintoma(diabetes, bebe_demasiada_agua). % ---
 sintoma(diabetes, cansancio). % --
 
+%Leucemia
+sintoma(leucemia, fiebre). % --
+sintoma(leucemia, perdida_de_apetito). % --
+sintoma(leucemia, diarrea). % --
+sintoma(leucemia, palidez_en_la_ancia). % --
+sintoma(leucemia, dificultad_para_respirar). % --
+sintoma(leucemia, falta_de_coordinacion).% --
+sintoma(leucemia, sangrado_de_repente).% --
+
 %----------------------------------------------------------------
 %CONSULTA A MEMORIA ACTIVA
 %----------------------------------------------------------------
@@ -83,6 +91,10 @@ evaluarHecho(ascaris,_,no).
 
 evaluarHecho(diabetes,Hecho,Respuesta):- var(Hecho,Respuesta), !.
 evaluarHecho(diabetes,_,no).
+
+evaluarHecho(leucemia,Hecho,Respuesta):- var(Hecho,Respuesta), !.
+evaluarHecho(leucemia,_,no).
+
 %----------------------------------------------------------------
 %FUNCIONES GENERALES
 %----------------------------------------------------------------
@@ -126,6 +138,8 @@ diagnosticar(resfriado):- detNroPreguntasSint(resfriado,N), N>=5, !.
 diagnosticar(ascaris):- detNroPreguntasSint(ascaris,N), N>=5, !.
 
 diagnosticar(diabetes):- detNroPreguntasSint(diabetes,N), N>=5, !.
+
+diagnosticar(leucemia):- detNroPreguntasSint(leucemia,N), N>=5, !.
 
 diagnosticar(no_determinado).
 

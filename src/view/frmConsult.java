@@ -51,6 +51,9 @@ public class frmConsult extends javax.swing.JFrame {
         listOfSymptoms.add(jCheckBox27);
         listOfSymptoms.add(jCheckBox28);
         listOfSymptoms.add(jCheckBox29);
+        listOfSymptoms.add(jCheckBox30);
+        listOfSymptoms.add(jCheckBox31);
+        listOfSymptoms.add(jCheckBox32);
  
     }
     
@@ -121,6 +124,9 @@ public class frmConsult extends javax.swing.JFrame {
         btnBack = new javax.swing.JButton();
         lblCounter = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jCheckBox30 = new javax.swing.JCheckBox();
+        jCheckBox31 = new javax.swing.JCheckBox();
+        jCheckBox32 = new javax.swing.JCheckBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -422,10 +428,10 @@ public class frmConsult extends javax.swing.JFrame {
         jCheckBox29.setBackground(new java.awt.Color(255, 255, 255));
         jCheckBox29.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jCheckBox29.setForeground(new java.awt.Color(77, 76, 76));
-        jCheckBox29.setText("Vomito");
+        jCheckBox29.setText("Falta de coordinacion");
         jCheckBox29.setFocusPainted(false);
         jCheckBox29.setFocusable(false);
-        jPanel1.add(jCheckBox29, new org.netbeans.lib.awtextra.AbsoluteConstraints(626, 283, -1, -1));
+        jPanel1.add(jCheckBox29, new org.netbeans.lib.awtextra.AbsoluteConstraints(626, 406, -1, -1));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/dogvet.png"))); // NOI18N
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 120, 230, 350));
@@ -451,6 +457,30 @@ public class frmConsult extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(77, 76, 76));
         jLabel4.setText("Seleccionados : ");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 70, -1, -1));
+
+        jCheckBox30.setBackground(new java.awt.Color(255, 255, 255));
+        jCheckBox30.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jCheckBox30.setForeground(new java.awt.Color(77, 76, 76));
+        jCheckBox30.setText("Vomito");
+        jCheckBox30.setFocusPainted(false);
+        jCheckBox30.setFocusable(false);
+        jPanel1.add(jCheckBox30, new org.netbeans.lib.awtextra.AbsoluteConstraints(626, 283, -1, -1));
+
+        jCheckBox31.setBackground(new java.awt.Color(255, 255, 255));
+        jCheckBox31.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jCheckBox31.setForeground(new java.awt.Color(77, 76, 76));
+        jCheckBox31.setText("Sangrado de repente");
+        jCheckBox31.setFocusPainted(false);
+        jCheckBox31.setFocusable(false);
+        jPanel1.add(jCheckBox31, new org.netbeans.lib.awtextra.AbsoluteConstraints(626, 324, -1, -1));
+
+        jCheckBox32.setBackground(new java.awt.Color(255, 255, 255));
+        jCheckBox32.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jCheckBox32.setForeground(new java.awt.Color(77, 76, 76));
+        jCheckBox32.setText("Palidez en la ancia");
+        jCheckBox32.setFocusPainted(false);
+        jCheckBox32.setFocusable(false);
+        jPanel1.add(jCheckBox32, new org.netbeans.lib.awtextra.AbsoluteConstraints(626, 365, -1, -1));
 
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 1060, 510);
@@ -489,7 +519,7 @@ public class frmConsult extends javax.swing.JFrame {
                 symptom = convertToPrologStyle(checkBox.getText());
                 list.add(symptom);
                 counter++;
-                System.out.println(symptom);
+                //System.out.println(symptom);
             }
         }
         
@@ -506,9 +536,14 @@ public class frmConsult extends javax.swing.JFrame {
             
             if("no_determinado".equals(result)){
                 result = "No se pudo detectar la enfermedad";
+                JOptionPane.showMessageDialog(null,result);
+            }
+            else if(result.equals("rabia")){
+                new frmRabia().setVisible(true);
+                this.dispose();
             }
             
-            JOptionPane.showMessageDialog(null,result);
+            //JOptionPane.showMessageDialog(null,result);
         }
         
     }//GEN-LAST:event_btnConsultActionPerformed
@@ -541,6 +576,9 @@ public class frmConsult extends javax.swing.JFrame {
     private javax.swing.JCheckBox jCheckBox28;
     private javax.swing.JCheckBox jCheckBox29;
     private javax.swing.JCheckBox jCheckBox3;
+    private javax.swing.JCheckBox jCheckBox30;
+    private javax.swing.JCheckBox jCheckBox31;
+    private javax.swing.JCheckBox jCheckBox32;
     private javax.swing.JCheckBox jCheckBox4;
     private javax.swing.JCheckBox jCheckBox5;
     private javax.swing.JCheckBox jCheckBox6;
