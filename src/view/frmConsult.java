@@ -195,6 +195,7 @@ public class frmConsult extends javax.swing.JFrame {
         jCheckBox1.setText("Agresividad Leve");
         jCheckBox1.setFocusPainted(false);
         jCheckBox1.setFocusable(false);
+        jCheckBox1.setOpaque(false);
         jPanel1.add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(38, 119, -1, -1));
 
         jCheckBox2.setBackground(new java.awt.Color(255, 255, 255));
@@ -203,6 +204,7 @@ public class frmConsult extends javax.swing.JFrame {
         jCheckBox2.setText("Aumento del Apetito");
         jCheckBox2.setFocusPainted(false);
         jCheckBox2.setFocusable(false);
+        jCheckBox2.setOpaque(false);
         jPanel1.add(jCheckBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(38, 160, -1, -1));
 
         jCheckBox3.setBackground(new java.awt.Color(255, 255, 255));
@@ -211,6 +213,7 @@ public class frmConsult extends javax.swing.JFrame {
         jCheckBox3.setText("Adelgazamiento");
         jCheckBox3.setFocusPainted(false);
         jCheckBox3.setFocusable(false);
+        jCheckBox3.setOpaque(false);
         jPanel1.add(jCheckBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(38, 201, -1, -1));
 
         jCheckBox4.setBackground(new java.awt.Color(255, 255, 255));
@@ -219,6 +222,7 @@ public class frmConsult extends javax.swing.JFrame {
         jCheckBox4.setText("Barriga Hinchada");
         jCheckBox4.setFocusPainted(false);
         jCheckBox4.setFocusable(false);
+        jCheckBox4.setOpaque(false);
         jPanel1.add(jCheckBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(38, 242, -1, -1));
 
         jCheckBox5.setBackground(new java.awt.Color(255, 255, 255));
@@ -227,6 +231,7 @@ public class frmConsult extends javax.swing.JFrame {
         jCheckBox5.setText("Bebe demasiada agua");
         jCheckBox5.setFocusPainted(false);
         jCheckBox5.setFocusable(false);
+        jCheckBox5.setOpaque(false);
         jPanel1.add(jCheckBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(38, 283, -1, -1));
 
         jCheckBox6.setBackground(new java.awt.Color(255, 255, 255));
@@ -235,6 +240,7 @@ public class frmConsult extends javax.swing.JFrame {
         jCheckBox6.setText("Cabeza Inclinada");
         jCheckBox6.setFocusPainted(false);
         jCheckBox6.setFocusable(false);
+        jCheckBox6.setOpaque(false);
         jPanel1.add(jCheckBox6, new org.netbeans.lib.awtextra.AbsoluteConstraints(38, 324, -1, -1));
 
         jCheckBox7.setBackground(new java.awt.Color(255, 255, 255));
@@ -243,6 +249,7 @@ public class frmConsult extends javax.swing.JFrame {
         jCheckBox7.setText("Cansancio");
         jCheckBox7.setFocusPainted(false);
         jCheckBox7.setFocusable(false);
+        jCheckBox7.setOpaque(false);
         jPanel1.add(jCheckBox7, new org.netbeans.lib.awtextra.AbsoluteConstraints(38, 365, -1, -1));
 
         jCheckBox8.setBackground(new java.awt.Color(255, 255, 255));
@@ -251,6 +258,7 @@ public class frmConsult extends javax.swing.JFrame {
         jCheckBox8.setText("Convulsiones");
         jCheckBox8.setFocusPainted(false);
         jCheckBox8.setFocusable(false);
+        jCheckBox8.setOpaque(false);
         jPanel1.add(jCheckBox8, new org.netbeans.lib.awtextra.AbsoluteConstraints(38, 406, -1, -1));
 
         jCheckBox9.setBackground(new java.awt.Color(255, 255, 255));
@@ -259,6 +267,7 @@ public class frmConsult extends javax.swing.JFrame {
         jCheckBox9.setText("Diarrea");
         jCheckBox9.setFocusPainted(false);
         jCheckBox9.setFocusable(false);
+        jCheckBox9.setOpaque(false);
         jPanel1.add(jCheckBox9, new org.netbeans.lib.awtextra.AbsoluteConstraints(216, 119, -1, -1));
 
         btnConsult.setBackground(new java.awt.Color(38, 50, 56));
@@ -279,6 +288,7 @@ public class frmConsult extends javax.swing.JFrame {
         jCheckBox10.setText("Dolor abdominal");
         jCheckBox10.setFocusPainted(false);
         jCheckBox10.setFocusable(false);
+        jCheckBox10.setOpaque(false);
         jPanel1.add(jCheckBox10, new org.netbeans.lib.awtextra.AbsoluteConstraints(216, 160, -1, -1));
 
         jCheckBox11.setBackground(new java.awt.Color(255, 255, 255));
@@ -287,6 +297,7 @@ public class frmConsult extends javax.swing.JFrame {
         jCheckBox11.setText("Dolor en las orejas");
         jCheckBox11.setFocusPainted(false);
         jCheckBox11.setFocusable(false);
+        jCheckBox11.setOpaque(false);
         jPanel1.add(jCheckBox11, new org.netbeans.lib.awtextra.AbsoluteConstraints(216, 201, -1, -1));
 
         jCheckBox12.setBackground(new java.awt.Color(255, 255, 255));
@@ -295,6 +306,7 @@ public class frmConsult extends javax.swing.JFrame {
         jCheckBox12.setText("Deshidratacion");
         jCheckBox12.setFocusPainted(false);
         jCheckBox12.setFocusable(false);
+        jCheckBox12.setOpaque(false);
         jPanel1.add(jCheckBox12, new org.netbeans.lib.awtextra.AbsoluteConstraints(216, 242, -1, -1));
 
         jCheckBox13.setBackground(new java.awt.Color(255, 255, 255));
@@ -303,6 +315,7 @@ public class frmConsult extends javax.swing.JFrame {
         jCheckBox13.setText("Dificultad para respirar");
         jCheckBox13.setFocusPainted(false);
         jCheckBox13.setFocusable(false);
+        jCheckBox13.setOpaque(false);
         jPanel1.add(jCheckBox13, new org.netbeans.lib.awtextra.AbsoluteConstraints(216, 283, -1, -1));
 
         jCheckBox14.setBackground(new java.awt.Color(255, 255, 255));
@@ -311,6 +324,7 @@ public class frmConsult extends javax.swing.JFrame {
         jCheckBox14.setText("Fiebre");
         jCheckBox14.setFocusPainted(false);
         jCheckBox14.setFocusable(false);
+        jCheckBox14.setOpaque(false);
         jPanel1.add(jCheckBox14, new org.netbeans.lib.awtextra.AbsoluteConstraints(216, 365, -1, -1));
 
         jCheckBox15.setBackground(new java.awt.Color(255, 255, 255));
@@ -319,6 +333,7 @@ public class frmConsult extends javax.swing.JFrame {
         jCheckBox15.setText("Estornudo");
         jCheckBox15.setFocusPainted(false);
         jCheckBox15.setFocusable(false);
+        jCheckBox15.setOpaque(false);
         jPanel1.add(jCheckBox15, new org.netbeans.lib.awtextra.AbsoluteConstraints(216, 324, -1, -1));
 
         jCheckBox16.setBackground(new java.awt.Color(255, 255, 255));
@@ -327,6 +342,7 @@ public class frmConsult extends javax.swing.JFrame {
         jCheckBox16.setText("Heces con Sangre");
         jCheckBox16.setFocusPainted(false);
         jCheckBox16.setFocusable(false);
+        jCheckBox16.setOpaque(false);
         jPanel1.add(jCheckBox16, new org.netbeans.lib.awtextra.AbsoluteConstraints(216, 406, -1, -1));
 
         jCheckBox17.setBackground(new java.awt.Color(255, 255, 255));
@@ -335,6 +351,7 @@ public class frmConsult extends javax.swing.JFrame {
         jCheckBox17.setText("Ojos llorosos");
         jCheckBox17.setFocusPainted(false);
         jCheckBox17.setFocusable(false);
+        jCheckBox17.setOpaque(false);
         jPanel1.add(jCheckBox17, new org.netbeans.lib.awtextra.AbsoluteConstraints(396, 160, -1, -1));
 
         jCheckBox18.setBackground(new java.awt.Color(255, 255, 255));
@@ -343,6 +360,7 @@ public class frmConsult extends javax.swing.JFrame {
         jCheckBox18.setText("Orina con frecuencia");
         jCheckBox18.setFocusPainted(false);
         jCheckBox18.setFocusable(false);
+        jCheckBox18.setOpaque(false);
         jPanel1.add(jCheckBox18, new org.netbeans.lib.awtextra.AbsoluteConstraints(396, 201, -1, -1));
 
         jCheckBox19.setBackground(new java.awt.Color(255, 255, 255));
@@ -351,6 +369,7 @@ public class frmConsult extends javax.swing.JFrame {
         jCheckBox19.setText("Perdida de apetito");
         jCheckBox19.setFocusPainted(false);
         jCheckBox19.setFocusable(false);
+        jCheckBox19.setOpaque(false);
         jPanel1.add(jCheckBox19, new org.netbeans.lib.awtextra.AbsoluteConstraints(396, 242, -1, -1));
 
         jCheckBox20.setBackground(new java.awt.Color(255, 255, 255));
@@ -359,6 +378,7 @@ public class frmConsult extends javax.swing.JFrame {
         jCheckBox20.setText("Salivacion Espumosa");
         jCheckBox20.setFocusPainted(false);
         jCheckBox20.setFocusable(false);
+        jCheckBox20.setOpaque(false);
         jPanel1.add(jCheckBox20, new org.netbeans.lib.awtextra.AbsoluteConstraints(396, 283, -1, -1));
 
         jCheckBox21.setBackground(new java.awt.Color(255, 255, 255));
@@ -367,6 +387,7 @@ public class frmConsult extends javax.swing.JFrame {
         jCheckBox21.setText("Se rasca las orejas muy seguido");
         jCheckBox21.setFocusPainted(false);
         jCheckBox21.setFocusable(false);
+        jCheckBox21.setOpaque(false);
         jPanel1.add(jCheckBox21, new org.netbeans.lib.awtextra.AbsoluteConstraints(396, 365, -1, -1));
 
         jCheckBox22.setBackground(new java.awt.Color(255, 255, 255));
@@ -375,6 +396,7 @@ public class frmConsult extends javax.swing.JFrame {
         jCheckBox22.setText("Mal olor en los oidos");
         jCheckBox22.setFocusPainted(false);
         jCheckBox22.setFocusable(false);
+        jCheckBox22.setOpaque(false);
         jPanel1.add(jCheckBox22, new org.netbeans.lib.awtextra.AbsoluteConstraints(396, 119, -1, -1));
 
         jCheckBox23.setBackground(new java.awt.Color(255, 255, 255));
@@ -383,6 +405,7 @@ public class frmConsult extends javax.swing.JFrame {
         jCheckBox23.setText("Secrecion en los oidos");
         jCheckBox23.setFocusPainted(false);
         jCheckBox23.setFocusable(false);
+        jCheckBox23.setOpaque(false);
         jPanel1.add(jCheckBox23, new org.netbeans.lib.awtextra.AbsoluteConstraints(396, 324, -1, -1));
 
         jCheckBox24.setBackground(new java.awt.Color(255, 255, 255));
@@ -391,6 +414,7 @@ public class frmConsult extends javax.swing.JFrame {
         jCheckBox24.setText("Secrecion nasal");
         jCheckBox24.setFocusPainted(false);
         jCheckBox24.setFocusable(false);
+        jCheckBox24.setOpaque(false);
         jPanel1.add(jCheckBox24, new org.netbeans.lib.awtextra.AbsoluteConstraints(396, 406, -1, -1));
 
         jCheckBox25.setBackground(new java.awt.Color(255, 255, 255));
@@ -399,6 +423,7 @@ public class frmConsult extends javax.swing.JFrame {
         jCheckBox25.setText("Sed Extrema");
         jCheckBox25.setFocusPainted(false);
         jCheckBox25.setFocusable(false);
+        jCheckBox25.setOpaque(false);
         jPanel1.add(jCheckBox25, new org.netbeans.lib.awtextra.AbsoluteConstraints(626, 119, -1, -1));
 
         jCheckBox26.setBackground(new java.awt.Color(255, 255, 255));
@@ -407,6 +432,7 @@ public class frmConsult extends javax.swing.JFrame {
         jCheckBox26.setText("Tos");
         jCheckBox26.setFocusPainted(false);
         jCheckBox26.setFocusable(false);
+        jCheckBox26.setOpaque(false);
         jPanel1.add(jCheckBox26, new org.netbeans.lib.awtextra.AbsoluteConstraints(626, 160, -1, -1));
 
         jCheckBox27.setBackground(new java.awt.Color(255, 255, 255));
@@ -415,6 +441,7 @@ public class frmConsult extends javax.swing.JFrame {
         jCheckBox27.setText("Tristeza");
         jCheckBox27.setFocusPainted(false);
         jCheckBox27.setFocusable(false);
+        jCheckBox27.setOpaque(false);
         jPanel1.add(jCheckBox27, new org.netbeans.lib.awtextra.AbsoluteConstraints(626, 201, -1, -1));
 
         jCheckBox28.setBackground(new java.awt.Color(255, 255, 255));
@@ -423,6 +450,7 @@ public class frmConsult extends javax.swing.JFrame {
         jCheckBox28.setText("Violencia Extrema");
         jCheckBox28.setFocusPainted(false);
         jCheckBox28.setFocusable(false);
+        jCheckBox28.setOpaque(false);
         jPanel1.add(jCheckBox28, new org.netbeans.lib.awtextra.AbsoluteConstraints(626, 242, -1, -1));
 
         jCheckBox29.setBackground(new java.awt.Color(255, 255, 255));
@@ -431,6 +459,7 @@ public class frmConsult extends javax.swing.JFrame {
         jCheckBox29.setText("Falta de coordinacion");
         jCheckBox29.setFocusPainted(false);
         jCheckBox29.setFocusable(false);
+        jCheckBox29.setOpaque(false);
         jPanel1.add(jCheckBox29, new org.netbeans.lib.awtextra.AbsoluteConstraints(626, 406, -1, -1));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/dogvet.png"))); // NOI18N
@@ -464,6 +493,7 @@ public class frmConsult extends javax.swing.JFrame {
         jCheckBox30.setText("Vomito");
         jCheckBox30.setFocusPainted(false);
         jCheckBox30.setFocusable(false);
+        jCheckBox30.setOpaque(false);
         jPanel1.add(jCheckBox30, new org.netbeans.lib.awtextra.AbsoluteConstraints(626, 283, -1, -1));
 
         jCheckBox31.setBackground(new java.awt.Color(255, 255, 255));
@@ -472,6 +502,7 @@ public class frmConsult extends javax.swing.JFrame {
         jCheckBox31.setText("Sangrado de repente");
         jCheckBox31.setFocusPainted(false);
         jCheckBox31.setFocusable(false);
+        jCheckBox31.setOpaque(false);
         jPanel1.add(jCheckBox31, new org.netbeans.lib.awtextra.AbsoluteConstraints(626, 324, -1, -1));
 
         jCheckBox32.setBackground(new java.awt.Color(255, 255, 255));
@@ -480,6 +511,7 @@ public class frmConsult extends javax.swing.JFrame {
         jCheckBox32.setText("Palidez en la ancia");
         jCheckBox32.setFocusPainted(false);
         jCheckBox32.setFocusable(false);
+        jCheckBox32.setOpaque(false);
         jPanel1.add(jCheckBox32, new org.netbeans.lib.awtextra.AbsoluteConstraints(626, 365, -1, -1));
 
         getContentPane().add(jPanel1);
