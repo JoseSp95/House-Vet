@@ -2,11 +2,11 @@ package view;
 
 import javax.swing.JFrame;
 
-public class frmOtitis extends javax.swing.JFrame {
+public class frmResfriado extends javax.swing.JFrame {
 
     private int x, y;
     
-    public frmOtitis() {
+    public frmResfriado() {
         initComponents();
         setLocationRelativeTo(null);
     }
@@ -32,6 +32,8 @@ public class frmOtitis extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -50,7 +52,7 @@ public class frmOtitis extends javax.swing.JFrame {
         });
         Pane.setLayout(null);
 
-        lblImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/otitis.jpg"))); // NOI18N
+        lblImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/resfriado.jpg"))); // NOI18N
         Pane.add(lblImage);
         lblImage.setBounds(1, 1, 450, 513);
 
@@ -71,7 +73,7 @@ public class frmOtitis extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btnExit);
-        btnExit.setBounds(555, 5, 50, 40);
+        btnExit.setBounds(560, 5, 50, 40);
 
         btnMinimize.setBackground(new java.awt.Color(38, 50, 56));
         btnMinimize.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
@@ -92,7 +94,7 @@ public class frmOtitis extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("OTITIS");
+        jLabel1.setText("RESFRIADO");
         jPanel1.add(jLabel1);
         jLabel1.setBounds(170, 10, 298, 46);
 
@@ -105,14 +107,14 @@ public class frmOtitis extends javax.swing.JFrame {
         jLabel2.setBounds(510, 240, 95, 33);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel3.setText("veterinario para evitar posible complicaciones");
+        jLabel3.setText("Darle miel");
         Pane.add(jLabel3);
-        jLabel3.setBounds(586, 336, 410, 29);
+        jLabel3.setBounds(586, 380, 410, 29);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel4.setText("oreja). ");
+        jLabel4.setText("enfermedad generalizada, con síntomas más intensos.");
         Pane.add(jLabel4);
-        jLabel4.setBounds(586, 193, 378, 29);
+        jLabel4.setBounds(586, 192, 378, 29);
 
         btnLogin.setBackground(new java.awt.Color(38, 60, 56));
         btnLogin.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -150,29 +152,39 @@ public class frmOtitis extends javax.swing.JFrame {
         jLabel5.setBounds(509, 109, 95, 33);
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel6.setText("La otitis canina es la inflamación del oído, ya sea a nivel interno (parte");
+        jLabel6.setText("Es un tipo de infección respiratoria alta distinto de la gripe, una infeccion");
         Pane.add(jLabel6);
-        jLabel6.setBounds(586, 148, 390, 29);
+        jLabel6.setBounds(586, 148, 396, 29);
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel7.setText("Se le dará unas gotas que se puede comprar en cualquier lugar de venta");
+        jLabel7.setText("Mantener al perro caliente y seco");
         Pane.add(jLabel7);
         jLabel7.setBounds(586, 270, 410, 29);
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel8.setText("de medicinas para animales, en el caso de que la enfermedad siga y no");
+        jLabel8.setText("Animarlo a beber ");
         Pane.add(jLabel8);
         jLabel8.setBounds(586, 292, 410, 29);
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel9.setText("se pueda solucionar se requerirá de todas maneras consultar con un");
+        jLabel9.setText("Reposo");
         Pane.add(jLabel9);
         jLabel9.setBounds(586, 314, 410, 29);
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel10.setText("no visible), medio (parte interna visible) o externo (parte externa de la");
+        jLabel10.setText("viral más grave del tracto respiratorio que se diferencia por ser una");
         Pane.add(jLabel10);
-        jLabel10.setBounds(586, 170, 390, 29);
+        jLabel10.setBounds(586, 170, 378, 29);
+
+        jLabel11.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel11.setText("Evitar el humo o polvo");
+        Pane.add(jLabel11);
+        jLabel11.setBounds(586, 336, 410, 29);
+
+        jLabel12.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel12.setText("Dar suplementos con vitamina C");
+        Pane.add(jLabel12);
+        jLabel12.setBounds(586, 358, 410, 29);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -223,6 +235,8 @@ public class frmOtitis extends javax.swing.JFrame {
     private javax.swing.JButton btnMinimize;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

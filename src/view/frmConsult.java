@@ -175,7 +175,7 @@ public class frmConsult extends javax.swing.JFrame {
                 btnExitActionPerformed(evt);
             }
         });
-        jPanel1.add(btnExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 10, -1, -1));
+        jPanel1.add(btnExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 5, -1, -1));
 
         lblTitle.setFont(new java.awt.Font("Arial", 0, 30)); // NOI18N
         lblTitle.setForeground(new java.awt.Color(77, 76, 76));
@@ -566,16 +566,30 @@ public class frmConsult extends javax.swing.JFrame {
             String result = consult.getResult();
             consult.cleanAsserts();
             
-            if("no_determinado".equals(result)){
-                result = "No se pudo detectar la enfermedad";
-                JOptionPane.showMessageDialog(null,result);
+            switch (result) {
+                case "no_determinado":
+                    result = "No se pudo detectar la enfermedad";
+                    JOptionPane.showMessageDialog(null,result);
+                    break;
+                case "rabia":
+                    new frmRabia().setVisible(true);
+                    this.dispose();
+                    break;
+                case "otitis":
+                    new frmOtitis().setVisible(true);
+                    this.dispose();
+                    break;
+                case "parvovirus":
+                    new frmParvovirus().setVisible(true);
+                    this.dispose();
+                    break;
+                case "resfriado":
+                    new frmResfriado().setVisible(true);
+                    this.dispose();
+                    break;
+                default:
+                    break;
             }
-            else if(result.equals("rabia")){
-                new frmRabia().setVisible(true);
-                this.dispose();
-            }
-            
-            //JOptionPane.showMessageDialog(null,result);
         }
         
     }//GEN-LAST:event_btnConsultActionPerformed

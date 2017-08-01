@@ -34,7 +34,6 @@ public class frmRabia extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
-        setPreferredSize(new java.awt.Dimension(1062, 515));
 
         Pane.setBackground(new java.awt.Color(255, 255, 255));
         Pane.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(67, 66, 66), 1, true));
@@ -71,7 +70,7 @@ public class frmRabia extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btnExit);
-        btnExit.setBounds(555, 10, 50, 40);
+        btnExit.setBounds(555, 5, 50, 40);
 
         btnMinimize.setBackground(new java.awt.Color(38, 50, 56));
         btnMinimize.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
@@ -107,7 +106,7 @@ public class frmRabia extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel3.setText("acabará por morir eventualmente");
         Pane.add(jLabel3);
-        jLabel3.setBounds(586, 360, 410, 29);
+        jLabel3.setBounds(586, 336, 410, 29);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel4.setText("de animales infectados.");
@@ -162,12 +161,12 @@ public class frmRabia extends javax.swing.JFrame {
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel8.setText("tanto, debido a la intensidad de los síntomas y a que los mismos afectan ");
         Pane.add(jLabel8);
-        jLabel8.setBounds(586, 300, 410, 29);
+        jLabel8.setBounds(586, 292, 410, 29);
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel9.setText("el sistema nervioso central y el cerebro del animal, un perro con rabia");
         Pane.add(jLabel9);
-        jLabel9.setBounds(586, 330, 410, 29);
+        jLabel9.setBounds(586, 314, 410, 29);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

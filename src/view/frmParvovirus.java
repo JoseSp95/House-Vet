@@ -71,7 +71,7 @@ public class frmParvovirus extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btnExit);
-        btnExit.setBounds(555, 10, 50, 40);
+        btnExit.setBounds(555, 5, 50, 40);
 
         btnMinimize.setBackground(new java.awt.Color(38, 50, 56));
         btnMinimize.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
@@ -107,7 +107,7 @@ public class frmParvovirus extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel3.setText("internamiento recibiendo transfusiones de sangre entre otras cosas.");
         Pane.add(jLabel3);
-        jLabel3.setBounds(586, 360, 410, 29);
+        jLabel3.setBounds(586, 336, 410, 29);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel4.setText("miembros de la familia Canidae como perros");
@@ -162,12 +162,12 @@ public class frmParvovirus extends javax.swing.JFrame {
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel8.setText("Tamiflu” una vez al día, sin embargo si no consigue mejorar, es de ");
         Pane.add(jLabel8);
-        jLabel8.setBounds(586, 300, 410, 29);
+        jLabel8.setBounds(586, 292, 410, 29);
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel9.setText("urgencia contactar con un médico veterinario para su posible");
         Pane.add(jLabel9);
-        jLabel9.setBounds(586, 330, 410, 29);
+        jLabel9.setBounds(586, 314, 410, 29);
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel10.setText("provocando enteritis, y son susceptibles a sufrirla todo tipo de la");
