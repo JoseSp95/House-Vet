@@ -103,7 +103,7 @@ public class frmLogin extends javax.swing.JFrame {
     }//GEN-LAST:event_btnExitActionPerformed
 
     private void btnMinimizeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMinimizeActionPerformed
-       this.setExtendedState(JFrame.ICONIFIED);
+       this.setExtendedState(JFrame.ICONIFIED); 
     }//GEN-LAST:event_btnMinimizeActionPerformed
 
     private void PaneMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PaneMousePressed

@@ -1,5 +1,7 @@
 package view;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import javax.swing.JCheckBox;
 import javax.swing.JFrame;
@@ -15,6 +17,7 @@ public class frmConsult extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
         fillList();
+        applyActionListener();
     }
 
     private void fillList(){
@@ -55,6 +58,24 @@ public class frmConsult extends javax.swing.JFrame {
         symptom = symptom.toLowerCase();
         symptom = symptom.replaceAll(" ","_");
         return symptom;
+    }
+    
+    private void applyActionListener(){
+        listOfSymptoms.forEach((checkBox) -> {
+            checkBox.addActionListener((ActionEvent e) -> {
+                lblCounter.setText(getCheckBoxSelected());
+            });
+        });
+    }
+    
+    private String getCheckBoxSelected(){
+        int counter = 0;
+        for(JCheckBox checkBox : listOfSymptoms){
+            if(checkBox.isSelected()){
+                counter++;
+            }
+        }
+        return String.valueOf(counter);
     }
     
     @SuppressWarnings("unchecked")
@@ -98,6 +119,8 @@ public class frmConsult extends javax.swing.JFrame {
         jCheckBox29 = new javax.swing.JCheckBox();
         jLabel3 = new javax.swing.JLabel();
         btnBack = new javax.swing.JButton();
+        lblCounter = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -405,10 +428,11 @@ public class frmConsult extends javax.swing.JFrame {
         jPanel1.add(jCheckBox29, new org.netbeans.lib.awtextra.AbsoluteConstraints(626, 283, -1, -1));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/dogvet.png"))); // NOI18N
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 90, 230, 350));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 120, 230, 350));
 
         btnBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/back1.png"))); // NOI18N
         btnBack.setBorderPainted(false);
+        btnBack.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnBack.setFocusPainted(false);
         btnBack.setFocusable(false);
         btnBack.addActionListener(new java.awt.event.ActionListener() {
@@ -417,6 +441,16 @@ public class frmConsult extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 20, 30, 30));
+
+        lblCounter.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblCounter.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblCounter.setText("0");
+        jPanel1.add(lblCounter, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 71, 30, 20));
+
+        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(77, 76, 76));
+        jLabel4.setText("Seleccionados : ");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 70, -1, -1));
 
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 1060, 510);
@@ -515,7 +549,9 @@ public class frmConsult extends javax.swing.JFrame {
     private javax.swing.JCheckBox jCheckBox9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel lblCounter;
     private javax.swing.JLabel lblTitle;
     // End of variables declaration//GEN-END:variables
 }
